@@ -5,7 +5,7 @@
     <title>Resume of Tony Alicea</title>
   </head>
   <body>
-    <section>
+    <nav>
       <ul>
         <li><a href="#aboutme">About Me</a></li>
         <li><a href="#services">Services</a></li>
@@ -15,7 +15,7 @@
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#mailingaddress">Mailing Address</a></li>
       </ul>
-    </section>
+    </nav>
     <main>
       <h1>Resume</h1>
       <section>
@@ -134,6 +134,53 @@
           111 Main St.<br> 
           Somewhere, NY 33333
         </address>
+      </section>
+      <section id="contactme">
+        <h2>Contact Me</h2>
+        <form action="dosomething.html" method="POST">
+          <p>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </p>
+          <p>
+            <label for="whycontacting">Why Contacting?</label>
+            <select name="whycontacting" id="whycontacting">
+              <option value="jobinterview">Job Interview</option>
+              <option value="needcontractor">Need Contractor</option>
+              <option value="chat">Just to chat</option>
+            </select>
+          </p>
+          <p>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          </p>
+          <fieldset>
+            <legend>Best Contact Time</legend>
+            <p>
+              <label for="contacttime1">Morning</label>
+              <input type="radio" id="contacttime1" name="contacttime" value="morning">
+            </p>
+            <p>
+              <label for="contacttime2">Afternoon</label>
+              <input type="radio" id="contacttime2" name="contacttime" value="afternoon">
+            </p>
+            <p>
+              <label for="contacttime3">Evening</label>
+              <input type="radio" id="contacttime3" name="contacttime" value="evening">
+            </p>
+            <p>
+              <label for="asap">ASAP</label>
+              <input type="checkbox" id="asap" name="asap">
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </section>
     </main>
   </body>
